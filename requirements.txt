@@ -1,0 +1,7 @@
+numpy>=1.18.5
+opencv-python
+scikit-image==0.17.2
+sklearn
+tensorflow>=2.4.0
+opencv-contrib-python
+pyvirtualcam
