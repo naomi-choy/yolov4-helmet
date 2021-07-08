@@ -23,7 +23,7 @@ ln = [ln[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 
 def execute(img):
     # construct a blob from the image
-    blob = cv.dnn.blobFromImage(img, 1/255.0, (416, 416), swapRB=True, crop=False)
+    blob = cv.dnn.blobFromImage(img, 1/255.0, (416, 416), swapRB=False, crop=False)
     r = blob[0, 0, :, :]
 
     net.setInput(blob)
